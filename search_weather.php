@@ -1,6 +1,6 @@
 <?php
 $city = $_POST['place'];
-$api_key = 'c039f731208579acf115c3b7cf92f75b';
+$api_key = '自分のAPIキー';
 $url = 'api.openweathermap.org/data/2.5/weather?q=' . "$city" . '&appid=' . "$api_key" . '&lang=ja&units=metric';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
